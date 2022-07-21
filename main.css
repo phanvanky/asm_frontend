@@ -1,0 +1,279 @@
+:root {
+    --color-primary: #0B0B0B;
+    --color-secondary: #1E2832;
+    --font-primary: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: #000;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.header-wrapper {
+    background: #F1F1F1;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-menu .navbar-nav .nav-link {
+    padding: 15px 20px;
+}
+
+/* ====== ACCOUNT ==== */
+.account__link {
+    display: inline-block;
+    margin: 0 10px;
+    color: var(--color-primary)
+}
+
+.account__icon {
+    margin-right: 5px;
+}
+
+/* ======BANNER===== */
+.banner {
+    padding: 70px 0;
+}
+
+.banner__title {
+    font-size: 74px;
+    font-weight: 300;
+    line-height: 55px;
+}
+
+.banner__description {
+    font-size: 30px;
+    line-height: 55px;
+}
+
+.banner__btn {
+    font-size: 29px;
+    border-radius: 0;
+    background-color: #FFF;
+    color: #000;
+}
+
+/* ===== BRANDS ===== */
+.brands {
+    padding: 30px 0;
+}
+
+/* ====== FEATURE PRODUCT =====*/
+.feature-product .container {
+    position: relative;
+}
+
+.feature-product-explore {
+    font-size: 34px;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 50%;
+    left: -300px;
+    transform: rotate(-90deg);
+    z-index: 999;
+}
+
+/* ===== PRODUCT ITEM ==== */
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 23px;
+}
+
+.product-image:hover .product__info {
+    bottom: 0;
+}
+
+.product__info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: var(--color-secondary);
+    color: #fff;
+
+    transition: ease-in-out 0.3s;
+}
+
+.product__name {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+}
+
+.product-meta {
+    padding: 10px 0;
+}
+
+.product__category {
+    font-size: 16px;
+    color: #777;
+    text-decoration: none;
+}
+
+.product__price {
+    font-size: 16px;
+}
+
+.product__price--old {
+    text-decoration: line-through;
+    margin-right: 10px;
+    color: #777777
+}
+
+.product__price--new {
+    color: #FF6F61;
+}
+
+.product__sale {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: #FF6F61;
+    color: #fff;
+    padding: 3px 10px;
+}
+
+/* SECTION COMMON */
+.section-header {
+    padding: 50px 0;
+}
+
+.section-header__title {
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* BLOCK FILTER */
+.block-filter {
+    padding: 15px 0;
+}
+
+.block-filter__link {
+    color: #777;
+}
+
+.block-filter__item:first-child .block-filter__link {
+    padding-left: 0;
+}
+
+.block-filter__link--active {
+    color: #000
+}
+
+.brand-banner {
+    background-image: url(./images/bg.png);
+    background-size: cover;
+    height: 400px;
+}
+
+@media (min-width: 768px) {
+    .brand-banner {
+        height: 700px
+    }
+}
+
+.brand-banner___title {
+    margin-top: 100px;
+    color: #FFF;
+}
+
+.brand-banner-logo {
+    background-color: #FFF;
+}
+
+.follow-instagam {
+    background: #F1F1F1;
+}
+
+.instagram-inputEmail {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #000;
+    background-color: #F1F1F1;
+    background-clip: padding-box;
+    border-width: 0 0 2px 0;
+
+
+    appearance: none;
+    border-radius: 0px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-submit {
+    display: block;
+    padding: 0.375rem 0.75rem;
+    border-width: 0 0 2px 0;
+    width: 45%;
+    border-radius: 0px;
+}
+
+.footer-nav__title {
+    position: absolute;
+    padding-top: 15px;
+    width: 17%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: capitalize;
+
+    color: #292929;
+}
+
+.icon {
+    position: absolute;
+    padding-top: 10%;
+}
+
+.catalogggg {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #292929;
+}
+
+.copyright {
+    background: #1E2832;
+    height: 52px;
+}
+
+.copyright__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFF;
+}
+
+.copyright__btn {
+    background: #1E2832;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFF;
+    border: 0px;
+}
