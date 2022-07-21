@@ -255,7 +255,7 @@ body {
 
 .copyright {
     background: #1E2832;
-    height: 52px;
+    height: auto;
 }
 
 .copyright__text {
