@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "json-server-auth ./db.json -w"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/phanvanky/asm_frontend/issues"
   },
-  "homepage": "https://github.com/phanvanky/asm_frontend#readme"
+  "homepage": "https://github.com/phanvanky/asm_frontend#readme",
+  "devDependencies": {
+    "json-server": "^0.17.0",
+    "json-server-auth": "^2.1.0"
+  }
 }
