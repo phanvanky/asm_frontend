@@ -1,16 +1,19 @@
 function routes($routeProvider) {
     $routeProvider
-        .when("/", {
-            templateUrl: "pages/home.html",
+        .when("/home", {
+            templateUrl: "features/admin/pages/home.html",
         })
+        .when("/login", {
+            templateUrl: "features/auth/pages/login.html",
+        })
+        .when("/fogot-password", {
+            templateUrl: "features/auth/pages/fogot-password.html",
+        })
+        
         .when("/register", {
-            templateUrl: "pages/register.html",
-            controller: "authController"
-        })
-        .when("/404", {
-            templateUrl: "pages/notFound.html",
+            templateUrl: "features/auth/pages/register.html",
         })
         .otherwise({
-            redirectTo: "/404",
+            redirectTo: "features/admin/pages/404.html",
         });
 }
