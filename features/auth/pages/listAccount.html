@@ -1,0 +1,26 @@
+<div class="container">
+    <h3>Quản lý Account</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>SĐT</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in user">
+                <td>{{$index+1}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.sdt}}</td>
+                <td>
+                    <button href="#" class="btn btn-danger">Xoá</button>
+                    <button href="#" class="btn btn-primary">Update</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
