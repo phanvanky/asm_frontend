@@ -31,6 +31,8 @@ function productController($scope, $http, $routeParams) {
                 .catch((error) => console.log(error));
         }
     };
+
+    //Thêm sản phẩm
     $scope.addItem = function (e) {
         e.preventDefault();
         $http

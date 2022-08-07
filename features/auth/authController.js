@@ -1,7 +1,7 @@
 function authController($scope, $http, $routeParams) {
     const API = `http://localhost:3000`;
     const APIUSER = `http://localhost:3000/users`;
-    const APICATE = `http://localhost:3000/categories`;
+    
     $scope.status = false;
     $scope.user = {
         name: "",
@@ -9,13 +9,10 @@ function authController($scope, $http, $routeParams) {
         password: "",
         sdt: ""
     };
-    $scope.cate = {
-        label: "",
-        path: ""
-    }
+    
 
     $scope.userList = [];
-    $scope.cateList = [];
+    
     const id = $routeParams.id;
 
     $scope.register = function (e) {
@@ -44,15 +41,6 @@ function authController($scope, $http, $routeParams) {
     if (id) {
         getUser();
     }
-    // Hiển thị ds category
-    (() => {
-        $http.get(APICATE).then(({ data }) => ($scope.cateList = data));
-    })();
-    const getCate = async () => {
-        $http.get(`${APICATE}/${id}`).then(({ data }) => ($scope.userList = data));
-    };
-    if (id) {
-        getCate();
-    }
+    
 
 }

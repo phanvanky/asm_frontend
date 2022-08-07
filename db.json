@@ -20,44 +20,52 @@
       "id": "1",
       "name": "product A",
       "price": "200",
-      "category": "1"
+      "category": "1",
+      "img": ""
     },
     {
-      "id": "2",
-      "name": "product B",
+      "id": "1",
+      "name": "product A",
       "price": "200",
-      "category": "2"
+      "category": "1",
+      "img": ""
     }
   ],
   "categories": [
     {
       "id": "1",
-      "name": "Jewelry & Accessories",
+      "label": "Jewelry & Accessories",
       "path": ""
     },
     {
       "id": "2",
-      "name": "Clothing & Shoes"
+      "label": "Clothing & Shoes",
+      "path": ""
     },
     {
       "id": "3",
-      "name": "Home & Living"
+      "label": "Home & Living",
+      "path": ""
     },
     {
       "id": "4",
-      "name": "Wedding & Party"
+      "label": "Wedding & Party",
+      "path": ""
     },
     {
       "id": "5",
-      "name": "Toys & Entertainment"
+      "label": "Toys & Entertainment",
+      "path": ""
     },
     {
       "id": "6",
-      "name": "Art & Collectibles"
+      "label": "Art & Collectibles",
+      "path": ""
     },
     {
       "id": "7",
-      "name": "Craft Supplies & Tools"
+      "label": "Craft Supplies & Tools",
+      "path": ""
     }
   ]
 }
