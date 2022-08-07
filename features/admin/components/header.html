@@ -26,7 +26,7 @@
                         Shopping</a>
                 </div>
             </div>
-            <div class="container py-3 " >
+            <!-- <div class="container py-3 " >
                 <nav class="navbar navbar-expand-lg  bg-light ">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#!home">Home</a>
@@ -50,10 +50,7 @@
                         </div>
                     </div>
                 </nav>
-            </div>
-
-
-
+            </div> -->
             <nav class="navbar navbar-expand-lg main-menu ">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -63,8 +60,8 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item" ng-repeat="product in menuList">
-                                <a class="nav-link active" href="{{product.path}}">{{product.label}}</a>
+                            <li class="nav-item" ng-repeat="cate in cateList">
+                                <a class="nav-link active" href="{{cate.path}}">{{cate.label}}</a>
                             </li>
 
 

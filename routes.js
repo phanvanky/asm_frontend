@@ -2,7 +2,7 @@ function routes($routeProvider) {
     $routeProvider
         .when("/", {
             templateUrl: "features/admin/pages/home.html",
-            controller: "adminController",
+            controller: "authController",
         })
         .when("/dspro", {
             templateUrl: "features/product/pages/list.product.html",
@@ -11,7 +11,7 @@ function routes($routeProvider) {
         .when("/add-product", {
             templateUrl: "features/product/components/form-add-product.html",
             controller: "productController",
-            controller: "adminController",
+           
         })
         .when("/dsaccount", {
             templateUrl: "features/auth/pages/listAccount.html",
