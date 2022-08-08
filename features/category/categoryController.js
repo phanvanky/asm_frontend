@@ -1,5 +1,5 @@
 function categoryController($scope, $http, $routeParams) {
-    const APICATE = `http://localhost:3000/categories`;
+    const API = `http://localhost:3000/categories`;
 
     $scope.cate = {
         label: "",
@@ -9,16 +9,16 @@ function categoryController($scope, $http, $routeParams) {
     const id = $routeParams.id;
     // Hiển thị ds category
     (() => {
-        $http.get(APICATE).then(({ data }) => ($scope.cateList = data));
+        $http.get(API).then(({ data }) => ($scope.cateList = data));
     })();
     const getCate = async () => {
-        $http.get(`${APICATE}/${id}`).then(({ data }) => ($scope.cateList = data));
+        $http.get(`${API}/${id}`).then(({ data }) => ($scope.cateList = data));
     };
     if (id) {
         getCate();
     }
     // Xóa category
-    $scope.removeItem = function (id) {
+    $scope.removeCate = function (id) {
         const confirm = window.confirm("Bạn có chắc chắn muốn xóa không?");
         if (confirm) {
             $http
@@ -32,17 +32,17 @@ function categoryController($scope, $http, $routeParams) {
         }
     };
     //Thêm category
-    $scope.addItem = function (e) {
+    $scope.addCate = function (e) {
         e.preventDefault();
         $http
             .post(`${API}`, $scope.cate)
             .then(() => {
                 toastr.success("Đã thêm thành công");
-                window.location.href = "./#!cate";
+                window.location.href = "./#!dscate";
             })
             .catch((error) => toastr.error("Lỗi", error));
     };
-    $scope.updateItem = function (e) {
+    $scope.updateCate = function (e) {
         console.log($scope.cate);
         $http.put(`${API}/${$scope.cate.id}`, $scope.cate).then(() => {
             console.log("thanh cong");

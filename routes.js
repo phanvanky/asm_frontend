@@ -14,6 +14,11 @@ function routes($routeProvider) {
             controller: "productController",
            
         })
+        .when("/edit-product", {
+            templateUrl: "features/product/components/form-edit-product.html",
+            controller: "productController",
+           
+        })
         .when("/dsaccount", {
             templateUrl: "features/auth/pages/listAccount.html",
             controller: "authController",

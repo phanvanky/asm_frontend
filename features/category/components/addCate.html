@@ -1,5 +1,5 @@
 <div class="container">
-    <form ng-submit="addItem($event)">
+    <form ng-submit="addCate($event)">
         <h2>Thêm danh mục</h2>
         <div class="mb-3">
             <label for="name" class="label-control">Category Name</label>
@@ -11,11 +11,11 @@
             />
         </div>
         <div class="mb-3">
-            <label for="price" class="label-control">Price</label>
+            <label for="cate" class="label-control">Path</label>
             <input
                 type="text"
                 class="form-control"
-                placeholder="Product Price"
+                placeholder="cate path"
                 ng-model="cate.path"
             />
         </div>

@@ -19,7 +19,8 @@ function authController($scope, $http, $routeParams) {
         e.preventDefault();
 
         $http.post(`${API}/register`, $scope.user)
-            .then(() => console.log("thành công"))
+            .then(() => window.location.href = "./#!dsaccount")
+            
             .catch((error) => console.log(error));
     };
     $scope.login = function (e) {
