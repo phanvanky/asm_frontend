@@ -23,10 +23,17 @@
     },
     {
       "email": "vanthiet@gmail.com",
-      "password": "$2a$10$VbGj7yOknEGpTPbHPu0w4OsfGjVZ8Y40Wx5eD9Ren.VY8W0ITMeS6",
-      "name": "Phan Văn thiết",
-      "sdt": "123456",
+      "password": "$2a$10$gW8oClVfbei8zIUNddbxl./ZOpMzx7AY/vt9QZ1kJwvU.U35F7M9W",
+      "name": "Phan Văn Thiết",
+      "sdt": "0123456789",
       "id": 4
+    },
+    {
+      "email": "tuanminh@gmail.com",
+      "password": "$2a$10$AhU8Gsld16Yb.srNbyQS7uJ3G5uQ9y74aEJvEwCcXWtLB8qbJqzV2",
+      "name": "Tuấn Minh",
+      "sdt": "123456789",
+      "id": 5
     }
   ],
   "products": [
@@ -34,15 +41,17 @@
       "id": "1",
       "name": "product A",
       "price": "200",
+      "quantity": "6",
       "categoryId": "1",
-      "img": ""
+      "img": "/ASM/asm_frontend/images/upload/products/1.jpg"
     },
     {
       "id": "2",
       "name": "product B",
       "price": "200",
+      "quantity": "6",
       "category": "2",
-      "img": ""
+      "img": "/ASM/asm_frontend/images/upload/products/2.jpg"
     },
     {
       "name": "1234",
@@ -85,6 +94,21 @@
       "id": "7",
       "label": "Craft Supplies & Tools",
       "path": ""
+    },
+    {
+      "label": "t-shirt",
+      "path": "123",
+      "id": "q6uTkD8"
+    },
+    {
+      "label": "hoodies",
+      "path": "121111",
+      "id": "1dzvYwu"
+    },
+    {
+      "label": "jacket",
+      "path": "1234455",
+      "id": "GQNYJ-r"
     }
   ]
 }

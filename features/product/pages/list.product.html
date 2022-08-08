@@ -8,6 +8,9 @@
                 <th class="">STT</th>
                 <th>Tên</th>
                 <th>Giá </th>
+                <th>Số lượng </th>
+                <th>Danh mục</th>
+                <th>Ảnh</th>
                 <th> Thao tác</th>
             </tr>
         </thead>
@@ -16,6 +19,9 @@
                 <td>{{$index + 1}}</td>
                 <td>{{product.name}}</td>
                 <td>{{product.price}}</td>
+                <td>{{product.quantity}}</td>
+                <td>{{product.categoryId}}</td>
+                <td > <img srcset="{{product.img}} 5x   " class="img-fluid" alt=""></td>
                 <td width="200">
                     <button class="btn btn-danger" ng-click="removeItem(product.id)">Remove</button>
                     <a href="#!product/{{product.id}}/edit" class="btn btn-primary">Edit</a>

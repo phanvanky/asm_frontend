@@ -1,17 +1,16 @@
 function productController($scope, $http, $routeParams) {
-    const API = `http://localhost:3000`;
-    const APICATE = `http://localhost:3000/categories`;
+    const API = `http://localhost:3000/products`;
+    
     $scope.product = {
         name: "",
+        quantity:"",
         price:"",
-        img:""
+        img:"",
+        categoryID:""
     };
-    $scope.cateList = [];
     $scope.productList = [];
     const id = $routeParams.id;
-    (() => {
-        $http.get(APICATE).then(({ data }) => ($scope.cateList = data));
-    })();
+    
     // Mặc định lấy danh sách sản phẩm và hiển thị ra ngoài
     (() => {
         $http.get(API).then(({ data }) => ($scope.productList = data));

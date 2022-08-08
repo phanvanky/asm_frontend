@@ -31,11 +31,19 @@ function routes($routeProvider) {
             templateUrl: "features/category/components/addCate.html",
             controller: "categoryController",
         })
+        .when("/cate/:id/edit", {
+            templateUrl: "features/category/components/editCate.html",
+            controller: "categoryController",
+        })
         .when("/home", {
             templateUrl: "features/admin/pages/home.html",
         })
         .when("/login", {
             templateUrl: "features/auth/pages/login.html",
+            controller: "authController",
+        })
+        .when("/user/:id/edit", {
+            templateUrl: "features/auth/components/edit-account.html",
             controller: "authController",
         })
         .when("/fogot-password", {

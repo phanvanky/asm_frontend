@@ -1,0 +1,25 @@
+<div class="container">
+    <form ng-submit="updateCate($event)">
+        <h2>Update danh mục</h2>
+        <div class="mb-3">
+            <label for="name" class="label-control">Category Name</label>
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Category Name"
+                ng-model="cate.label"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="cate" class="label-control">Path</label>
+            <input
+                type="text"
+                class="form-control"
+                placeholder="cate path"
+                ng-model="cate.path"
+            />
+        </div>
+       
+        <button class="btn btn-primary">Add</button>
+    </form>
+</div>

@@ -20,8 +20,8 @@
                 <td>{{user.email}}</td>
                 <td>{{user.sdt}}</td>
                 <td>
-                    <button href="#" class="btn btn-danger">Xoá</button>
-                    <button href="#" class="btn btn-primary">Update</button>
+                    <button ng-click="removeUser(user.id)" class="btn btn-danger">Xoá</button>
+                    <a href="#!user/{{user.id}}/edit" class="btn btn-primary">Update</a>
                 </td>
             </tr>
         </tbody>
