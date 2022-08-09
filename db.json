@@ -38,77 +38,77 @@
   ],
   "products": [
     {
-      "id": "1",
+      "id": 1,
       "name": "product A",
       "price": "200",
       "quantity": "6",
-      "categoryId": "1",
-      "img": "/ASM/asm_frontend/images/upload/products/1.jpg"
+      "categoryId": 1,
+      "img": "/asm_frontend/images/upload/products/1.jpg"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "product B",
       "price": "200",
       "quantity": "6",
-      "category": "2",
-      "img": "/ASM/asm_frontend/images/upload/products/2.jpg"
+      "categoryId": 1,
+      "img": "/asm_frontend/images/upload/products/2.jpg"
     },
     {
       "name": "1234",
       "price": "1231231",
-      "id": "2-0XMMk"
+      "categoryId": 6,
+      "id": 3
+    },
+    {
+      "name": "aaaa",
+      "quantity": "2131",
+      "price": "aaa",
+      "img": "",
+      "categoryID": "",
+      "categoryId": 2,
+      "id": 4
     }
   ],
   "categories": [
     {
-      "id": "1",
+      "id": 1,
       "label": "Jewelry & Accessories",
       "path": ""
     },
     {
-      "id": "2",
+      "id": 2,
       "label": "Clothing & Shoes",
       "path": ""
     },
     {
-      "id": "3",
+      "id": 3,
       "label": "Home & Living",
       "path": ""
     },
     {
-      "id": "4",
+      "id": 4,
       "label": "Wedding & Party",
       "path": ""
     },
     {
-      "id": "5",
+      "id": 5,
       "label": "Toys & Entertainment",
       "path": ""
     },
     {
-      "id": "6",
+      "id": 6,
       "label": "Art & Collectibles",
       "path": ""
     },
     {
-      "id": "7",
+      "id": 7,
       "label": "Craft Supplies & Tools",
       "path": ""
     },
     {
-      "label": "t-shirt",
-      "path": "123",
-      "id": "q6uTkD8"
-    },
-    {
-      "label": "hoodies",
-      "path": "121111",
-      "id": "1dzvYwu"
-    },
-    {
-      "label": "jacket",
-      "path": "1234455",
-      "id": "GQNYJ-r"
+      "label": "Danh mục mới",
+      "path": "",
+      "id": 8
     }
   ]
 }

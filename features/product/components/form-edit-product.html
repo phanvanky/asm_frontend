@@ -21,8 +21,8 @@
         </div>
         <div class="mb-3">
             <label for="cate" class="label-control">Danh mục sản phẩm</label>
-            <select class="form-control" name="" id="" ng-model="product.category">
-                <option value="" ng-repeat="cate in cateList">{{cate.label}}</option>
+            <select class="form-control" name="" id="" >
+                <option value="" ng-repeat="cate in cateList" value="{{cate.id}}">{{cate.label}} </option>
             </select>
         </div>
         <button class="btn btn-primary">Update</button>

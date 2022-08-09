@@ -9,10 +9,10 @@ function categoryController($scope, $http, $routeParams) {
     const id = $routeParams.id;
     // Hiển thị ds category
     (() => {
-        $http.get(API).then(({ data }) => ($scope.cateList = data));
+        $http.get(API ).then(({ data }) => ($scope.cateList = data));
     })();
     const getCate = async () => {
-        $http.get(`${API}/${id}`).then(({ data }) => ($scope.cateList = data));
+        $http.get(`${API}/${id}`+`/?_embed=products`   ).then(({ data }) => ($scope.cateList = data));
     };
     if (id) {
         getCate();

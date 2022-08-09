@@ -9,14 +9,24 @@ function productController($scope, $http, $routeParams) {
         categoryID:""
     };
     $scope.productList = [];
+
     const id = $routeParams.id;
-    
-    // Mặc định lấy danh sách sản phẩm và hiển thị ra ngoài
+    //lấy danh sách category
+    $scope.cate = {
+        label: "",
+        path: ""
+    }
+    $scope.cateList = [];
+    (() => {
+        $http.get(`http://localhost:3000/categories`).then(({ data }) => ($scope.cateList = data));
+    })();
+
+   // Mặc định lấy danh sách sản phẩm và hiển thị ra ngoài
     (() => {
         $http.get(API).then(({ data }) => ($scope.productList = data));
     })();
     const getItemProduct = async () => {
-        $http.get(`${API}/${id}`).then(({ data }) => ($scope.product = data));
+        $http.get(`${API}/${id}`+`/?_expand=category`).then(({ data }) => ($scope.productList = data));
     };
     if (id) {
         getItemProduct();
@@ -57,4 +67,15 @@ function productController($scope, $http, $routeParams) {
             console.log("thanh cong");
         });
     };
+
+    // hiển thị hình ảnh
+
+    function chooseFile(fileInput) {
+        if(fileInput.file && fileInput.file[0])
+        var reader = new function (e) {
+            $('#image').attr('src', e.taget.result);
+        }
+        reader.readAsDataURL(fileInput.file[0]);
+
+    }
 }

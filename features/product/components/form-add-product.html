@@ -30,7 +30,10 @@
         </div>
         <div class="mb-3">
             <label for="img" class="label-control">img</label>
+            <!-- <img src="" onchange="choseFile(this)" alt="" accept="image/gif, image/jpeg, image/png"> -->
+            <img src="" alt="">
             <input
+              onchange="choseFile(this)" alt="" accept="image/gif, image/jpeg, image/png"
                 type="file"
                 class="form-control"
                 placeholder="Product img"
@@ -39,8 +42,8 @@
         </div>
         <div class="mb-3">
             <label for="cate" class="label-control">Danh mục sản phẩm</label>
-            <select class="form-control" name="" id="" ng-model="product.category">
-                <option value="" ng-repeat="cate in cateList">
+            <select class="form-control" name="" id="" ng-model="product.categoryId" >
+                <option value="cate.id" ng-repeat="cate in cateList">
                     {{cate.label}}
                 </option>
             </select>
