@@ -43,7 +43,7 @@
       "price": "200",
       "quantity": "6",
       "categoryId": 1,
-      "img": "/asm_frontend/images/upload/products/1.jpg"
+      "img": "/frontend/asm_frontend/images/upload/products/1.jpg"
     },
     {
       "id": 2,
@@ -51,7 +51,7 @@
       "price": "200",
       "quantity": "6",
       "categoryId": 1,
-      "img": "/asm_frontend/images/upload/products/2.jpg"
+      "img": "/frontend/asm_frontend/images/upload/products/2.jpg"
     },
     {
       "name": "1234",
